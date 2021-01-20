@@ -17,6 +17,10 @@ public class DefaultCountingOutRhymer {
         return EMPTY;
     }
 
+    public static int getCAPACITY() {
+        return CAPACITY;
+    }
+
     public void countIn(int in) {
 
         if (!isFull())
@@ -28,7 +32,7 @@ public class DefaultCountingOutRhymer {
     }
 
     public boolean isFull() {
-        return getTotal() == CAPACITY;
+        return getTotal() == getCAPACITY();
     }
 
     protected int peekaboo() {
